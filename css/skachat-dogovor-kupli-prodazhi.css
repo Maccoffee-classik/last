@@ -1,0 +1,71 @@
+.files p{
+	text-align: justify;
+	padding: 5px 0px;
+	margin: 5px 0;
+	font-size: 18px;
+}
+.files p:hover{
+	text-decoration: underline;
+}
+img{
+	display: inline-block;
+	padding-right: 10px;
+	width: 30px;
+	vertical-align: middle;
+}
+span{
+	color: #ccc;
+	font-size: 30px;
+	display: block;
+	text-align: center;
+}
+
+h1, h2, h3, h4{
+	font-size: 22px;
+	font-family: SegoeUI;
+	text-align: center;
+	margin: 0px 0 15px;
+	font-weight: 300;
+	color: #333;
+}
+h2{
+	font-size: 20px;
+}
+h3{
+	font-size: 18px;
+	margin: 35px 0 15px;
+}
+h4{
+	font-size: 16px;
+	margin: 35px 0 15px;
+}
+
+.obrazec{
+	width: 100%;
+	margin: 10px 0 30px;
+	border: 1px solid #ccc;
+	padding: 0px;
+}
+/* gosposhlini */
+main li:nth-child(2n+1){
+	color: #2F707E;
+	font-size: 16px;
+	font-family: arial;
+	list-style-position: outside;
+	list-style-type: disc;
+}
+main li:nth-child(2n){
+	font-size: 14px;
+	font-family: times new roman;
+	list-style-type: none;
+	margin: 5px 0 20px;
+}
+main li:nth-child(2n):hover{
+	color: red;
+}
+/* end gosposhlini */
+
+/* zakluchit DKP */
+.mini{
+	font-size: 10px;
+}

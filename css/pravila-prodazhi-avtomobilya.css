@@ -1,0 +1,75 @@
+.noindent{
+text-indent: 0px;
+}
+.img1{
+display: block;
+width: 100%;
+vertical-align: middle;
+margin: 20px 0 10px;
+border: 1px solid #ccc;
+}
+.files p{
+text-align: justify;
+padding: 5px 0px;
+margin: 5px 0;
+font-size: 18px;
+}
+.files p:hover{
+text-decoration: underline;
+}
+.files img{
+display: inline-block;
+padding-right: 10px;
+width: 30px;
+vertical-align: middle;
+}
+span{
+color: #ccc;
+font-size: 30px;
+display: block;
+text-align: center;
+}
+
+h1, h2, h3, h4{
+font-size: 22px;
+font-family: "SegoeUI";
+text-align: center;
+margin: 0px 0 15px;
+font-weight: 300;
+color: #333;
+}
+h2{
+font-size: 20px;
+}
+h3{
+font-size: 18px;
+margin: 35px 0 15px;
+}
+h4{
+font-size: 16px;
+margin: 35px 0 15px;
+}
+
+b{
+font-weight: 600;
+}
+
+li{
+font-size: 14px;
+line-height: 1.6;
+font-family: SegoeUI;
+letter-spacing: 1px;
+list-style-type: disc;
+margin-left: 20px;
+text-align: justify;
+color: #333;
+}
+.numeric li{
+list-style-type: number;
+font-family: "SegoeUI";
+margin-left: 15px;
+padding-left: 5px;
+list-style-position: outside;
+font-size: 14px;
+margin-top: 5px;
+}
