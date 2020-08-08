@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta http-equiv="Content-language" content="ru" />
+	<meta http-equiv="Content-Style-Type" content="text/css" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- favicon -->
+	<link href="favicon.png" rel="shortcut icon" type="image/x-icon" />
+	<!-- /favicon -->
+	<meta name="robots" content="all" />
+	<meta name="author" lang="ru" content="Договор купли-продажи" />
+	<meta name="copyright" lang="ru" content="Бланк договор купли-продажи" />
+	<!-- verification -->
+
+	<meta content="Договор купли продажи заполнить онлайн" name="keywords">
+	</meta>
+	<meta content="Простой и удобный бланк ДКП авто для онлайн заполнения прямо на сайте, без регистрации"
+		name="description">
+	</meta>
+	<!-- Yandex.Metrika counter -->
+	<script type="text/javascript">
+		(function (d, w, c) {
+			(w[c] = w[c] || []).push(function () {
+				try {
+					w.yaCounter33710244 = new Ya.Metrika({
+						id: 33710244,
+						clickmap: true,
+						trackLinks: true,
+						accurateTrackBounce: true,
+						webvisor: true
+					});
+				} catch (e) {}
+			});
+			var n = d.getElementsByTagName("script")[0],
+				s = d.createElement("script"),
+				f = function () {
+					n.parentNode.insertBefore(s, n);
+				};
+			s.type = "text/javascript";
+			s.async = true;
+			s.src = "https://mc.yandex.ru/metrika/watch.js";
+			if (w.opera == "[object Opera]") {
+				d.addEventListener("DOMContentLoaded", f, false);
+			} else {
+				f();
+			}
+		})(document, window, "yandex_metrika_callbacks");
+	</script><noscript>
+		<div><img src="https://mc.yandex.ru/watch/33710244" style="position:absolute; left:-9999px;" alt="" /></div>
+	</noscript>
+	<!-- /Yandex.Metrika counter -->
+	<!-- google anal-->
+	<script>
+		(function (i, s, o, g, r, a, m) {
+			i['GoogleAnalyticsObject'] = r;
+			i[r] = i[r] || function () {
+				(i[r].q = i[r].q || []).push(arguments)
+			}, i[r].l = 1 * new Date();
+			a = s.createElement(o),
+				m = s.getElementsByTagName(o)[0];
+			a.async = 1;
+			a.src = g;
+			m.parentNode.insertBefore(a, m)
+		})(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+		ga('create', 'UA-70922540-1', 'auto');
+		ga('send', 'pageview');
+	</script>
+	<!-- /google anal-->
+	<!-- Open Graph -->
+	<meta property="og:title" content="ДКП заполнить онлайн" />
+	<meta property="og:description" content="Онлайн заполнение договора купли продажи авто" />
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="https://blank-dogovor-kupli-prodazhi.ru" />
+	<meta property="og:site_name" content="Бланк договор купли-продажи" />
+	<meta property="og:locale" content="ru_RU" />
+	<meta property="og:image" content="https://blank-dogovor-kupli-prodazhi.ru/images/favicon-b.jpg" />
+	<meta property="og:image:type" content="image/jpg" />
+	<meta property="og:image:width" content="256" />
+	<meta property="og:image:height" content="256" />
+	<!-- Open Graph END-->
+	<title>Договор купли продажи заполнить онлайн</title>
+	<!-- CSS -->
+	<!-- <link rel="stylesheet" type="text/css" href="css/reset.css"> -->
+	<link rel="stylesheet" type="text/css" href="./css/online-zapolnenie.css">
+	<!-- js -->
+	<script type="text/javascript" src="./js/jquery-1.10.1.min.js"></script>
+	<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+	<script src="https://unpkg.com/jspdf@latest/dist/jspdf.min.js"></script>
+	<script type="text/javascript" src="./js/html2canvas.min.js"></script>
+	<script type="text/javascript" src="./js/scripts.js"></script>
+	<script type="text/javascript" src="./js/online-zapolnenie.js"></script>
+	<script>
+		document.createElement('header');
+		document.createElement('nav');
+		document.createElement('main');
+		document.createElement('section');
+		document.createElement('footer');
+	</script>
+</head>
+
+<body onload="{linksMap([], null, 4)}">
+	
+	<div class="formConteiner noPrint">
+
+
+		<p class="formGuide">Заполните все поля формы и нажмите кнопку "печать" или клавиши <span title="Напечатать"
+				onclick="window.print();">Ctrl + P</span></p>
+		<div class="formAuto" style="justify-content: flex-start;">
+			<div class="formAutoUnit formWidth21">
+				<input tabindex="1" type="text" name="place" oninput="onChange(event)" placeholder="" onfocus="onFocus(event)"
+					onblur="onBlur(event)">
+				<label onclick="onLabelClick(event)">Место составления договора</label>
+			</div>
+			<div class="formAutoUnit formWidth21">
+				<input tabindex="2" type="text" name="date" oninput="onChange(event)" placeholder="" onfocus="onFocus(event)"
+					onblur="onBlur(event)">
+				<label onclick="onLabelClick(event)">Дата составления договора</label>
+			</div>
+		</div>
+
+		<h3>Данные Покупателя</h3>
+		<div class="formAuto">
+			<div class="formAutoUnit formWidth50">
+				<input tabindex="3" type="text" name="buyer" maxlength="40" oninput="onChange(event)" onfocus="onFocus(event)"
+					onblur="onBlur(event)">
+				<label onclick="onLabelClick(event)">Фамилия, имя и отчество</label>
+			</div>
+			<div class="formAutoUnit formWidth10">
+				<input tabindex="4" type="text" name="buyerDate" oninput="onChange(event)" onfocus="onFocus(event)"
+					onblur="onBlur(event)">
+				<label onclick="onLabelClick(event)">Дата рождения</label>
+			</div>
+			<div class="formAutoUnit formWidth25">
+				<input tabindex="5" type="text" name="buyerFrom" oninput="onChange(event)" onfocus="onFocus(event)"
+					onblur="onBlur(event)">
+				<label onclick="onLabelClick(event)">Место рождения</label>
+			</div>
+		</div>
+		<div class="formAuto" style="justify-content: flex-start;">
+			<div class="formAutoUnit formWidth62">
+				<input tabindex="6" type="text" name="buyerRegistration" oninput="onChange(event)" onfocus="onFocus(event)"
+					onblur="onBlur(event)">
+				<label onclick="onLabelClick(event)">Адрес регистрации (прописка)</label>
+			</div>
+			<div class="formAutoUnit formWidth14">
+				<input tabindex=7 type="text" name="buyerSerial" oninput="onChange(event)" onfocus="onFocus(event)"
+					onblur="onBlur(event)">
+				<label onclick="onLabelClick(event)">Паспорт, серия</label>
+			</div>
+			<div class="formAutoUnit formWidth14">
+				<input tabindex="8" type="text" name="buyerNumber" oninput="onChange(event)" onfocus="onFocus(event)"
+					onblur="onBlur(event)">
+				<label onclick="onLabelClick(event)">номер</label>
+			</div>
+			<div class="formAutoUnit formWidth14">
+				<input tabindex="9" type="text" name="buyerPasportDate" oninput="onChange(event)" onfocus="onFocus(event)"
+					onblur="onBlur(event)">
+				<label onclick="onLabelClick(event)">дата выдачи</label>
+			</div>
+		</div>
+		<div class="formAuto">
+			<div class="formAutoUnit formWidth100">
+				<input tabindex="10" type="text" name="buyerPasportGiven" oninput="onChange(event)" onfocus="onFocus(event)"
+					onblur="onBlur(event)">
+				<label onclick="onLabelClick(event)">Кем выдан</label>
+			</div>
+		</div>
+
+		<h3>Данные продавца</h3>
+		<div class="formAuto">
+			<div class="formAutoUnit formWidth50">
+				<input tabindex="11" type="text" name="seller" maxlength="40" oninput="onChange(event)" onfocus="onFocus(event)"
+					onblur="onBlur(event)">
+				<label onclick="onLabelClick(event)">Фамилия, имя и отчество</label>
+			</div>
+			<div class="formAutoUnit formWidth10">
+				<input tabindex="12" type="text" name="sellerDate" oninput="onChange(event)" onfocus="onFocus(event)"
+					onblur="onBlur(event)">
+				<label onclick="onLabelClick(event)">Дата рождения</label>
+			</div>
+			<div class="formAutoUnit formWidth25">
+				<input tabindex="13" type="text" name="sellerFrom" oninput="onChange(event)" onfocus="onFocus(event)"
+					onblur="onBlur(event)">
+				<label onclick="onLabelClick(event)">Место рождения</label>
+			</div>
+		</div>
+		<div class="formAuto" style="justify-content: flex-start;">
+			<div class="formAutoUnit formWidth62">
+				<input tabindex="14" type="text" name="sellerRegistration" oninput="onChange(event)" onfocus="onFocus(event)"
+					onblur="onBlur(event)">
+				<label onclick="onLabelClick(event)">Адрес регистрации (прописка)</label>
+			</div>
+			<div class="formAutoUnit formWidth14">
+				<input tabindex="15" type="text" name="sellerSerial" oninput="onChange(event)" onfocus="onFocus(event)"
+					onblur="onBlur(event)">
+				<label onclick="onLabelClick(event)">Паспорт, серия</label>
+			</div>
+			<div class="formAutoUnit formWidth14">
+				<input tabindex="16" type="text" name="sellerNumber" oninput="onChange(event)" onfocus="onFocus(event)"
+					onblur="onBlur(event)">
+				<label onclick="onLabelClick(event)">номер</label>
+			</div>
+			<div class="formAutoUnit formWidth14">
+				<input tabindex="17" type="text" name="sellerPasportDate" oninput="onChange(event)" onfocus="onFocus(event)"
+					onblur="onBlur(event)">
+				<label onclick="onLabelClick(event)">дата выдачи</label>
+			</div>
+		</div>
+		<div class="formAuto">
+			<div class="formAutoUnit formWidth100">
+				<input tabindex="18" type="text" name="sellerPasportGiven" oninput="onChange(event)" onfocus="onFocus(event)"
+					onblur="onBlur(event)">
+				<label onclick="onLabelClick(event)">Кем выдан</label>
+			</div>
+		</div>
+
+
+		<h3>Данные транспортного средства</h3>
+		<div class="formAuto">
+			<div class="formAutoUnit formWidth98">
+				<input tabindex="19" type="text" name="mark" oninput="onChange(event)" onfocus="onFocus(event)"
+					onblur="onBlur(event)">
+				<label onclick="onLabelClick(event)">Марка, модель</label>
+			</div>
+		</div>
+
+
+		<div class="formAuto">
+			<div class="formAutoUnit formWidth21">
+				<input tabindex="20" type="text" name="VIN" oninput="onChange(event)" onfocus="onFocus(event)"
+					onblur="onBlur(event)">
+				<label onclick="onLabelClick(event)">VIN</label>
+				<a href="https://avtocod.ru/?a_aid=blankdogovorkupliprodazhiru" title="Проверка автомобиля на сервисе Автокод"
+					alt="Проверить авто по VIN" target="_blank">Проверить VIN</a>
+			</div>
+			<div class="formAutoUnit formWidth21">
+				<input tabindex="21" type="text" name="type" oninput="onChange(event)" onfocus="onFocus(event)"
+					onblur="onBlur(event)">
+				<label onclick="onLabelClick(event)">Тип ТС</label>
+			</div>
+			<div class="formAutoUnit formWidth21">
+				<input tabindex="21" type="text" name="category" oninput="onChange(event)" onfocus="onFocus(event)"
+					onblur="onBlur(event)">
+				<label onclick="onLabelClick(event)">Категория ТС</label>
+			</div>
+			<div class="formAutoUnit formWidth21">
+				<input tabindex="22" type="text" name="year" oninput="onChange(event)" onfocus="onFocus(event)"
+					onblur="onBlur(event)">
+				<label onclick="onLabelClick(event)">Год выпуска</label>
+			</div>
+		</div>
+
+		<div class="formAuto">
+			<div class="formAutoUnit formWidth21">
+				<input tabindex="23" type="text" name="odometr" oninput="onChange(event)" onfocus="onFocus(event)"
+					onblur="onBlur(event)">
+				<label onclick="onLabelClick(event)">Пробег</label>
+			</div>
+			<div class="formAutoUnit formWidth21">
+				<input tabindex="24" type="text" name="power" oninput="onChange(event)" onfocus="onFocus(event)"
+					onblur="onBlur(event)">
+				<label onclick="onLabelClick(event)">Мощность двигателя</label>
+			</div>
+			<div class="formAutoUnit formWidth21">
+				<input tabindex="25" type="text" name="volume" oninput="onChange(event)" onfocus="onFocus(event)"
+					onblur="onBlur(event)">
+				<label onclick="onLabelClick(event)">Рабочий объём двигателя</label>
+			</div>
+			<div class="formAutoUnit formWidth21">
+				<input tabindex="26" type="text" name="color" oninput="onChange(event)" onfocus="onFocus(event)"
+					onblur="onBlur(event)">
+				<label onclick="onLabelClick(event)">Цвет кузова</label>
+			</div>
+		</div>
+
+		<div class="formAuto">
+			<div class="formAutoUnit formWidth21">
+				<input tabindex="27" type="text" name="engineModel" oninput="onChange(event)" onfocus="onFocus(event)"
+					onblur="onBlur(event)">
+				<label onclick="onLabelClick(event)">Модель двигателя</label>
+			</div>
+			<div class="formAutoUnit formWidth21">
+				<input tabindex="28" type="text" name="enginenumber" oninput="onChange(event)" onfocus="onFocus(event)"
+					onblur="onBlur(event)">
+				<label onclick="onLabelClick(event)">Номер двигателя</label>
+			</div>
+			<div class="formAutoUnit formWidth21">
+				<input tabindex="29" type="text" name="chassis" oninput="onChange(event)" onfocus="onFocus(event)"
+					onblur="onBlur(event)">
+				<label onclick="onLabelClick(event)">Номер шасси/рамы</label>
+			</div>
+			<div class="formAutoUnit formWidth21">
+				<input tabindex="30" type="text" name="body" oninput="onChange(event)" onfocus="onFocus(event)"
+					onblur="onBlur(event)">
+				<label onclick="onLabelClick(event)">Номер кузова</label>
+			</div>
+		</div>
+
+		<h4>Паспорт транспортного средства, ПТС</h4>
+		<div class="formAuto">
+			<div class="formAutoUnit formWidth21">
+				<input tabindex="31" type="text" name="PTSSerial" oninput="onChange(event)" onfocus="onFocus(event)"
+					onblur="onBlur(event)">
+				<label onclick="onLabelClick(event)">Паспорт ТС, серия</label>
+			</div>
+			<div class="formAutoUnit formWidth21">
+				<input tabindex="32" type="text" name="PTSNumber" oninput="onChange(event)" onfocus="onFocus(event)"
+					onblur="onBlur(event)">
+				<label onclick="onLabelClick(event)">Номер</label>
+			</div>
+			<div class="formAutoUnit formWidth21">
+				<input tabindex="33" type="text" name="PTSDate" oninput="onChange(event)" onfocus="onFocus(event)"
+					onblur="onBlur(event)">
+				<label onclick="onLabelClick(event)">Дата выдачи</label>
+			</div>
+			<div class="formAutoUnit formWidth21">
+				<input tabindex="34" type="text" name="number" oninput="onChange(event)" onfocus="onFocus(event)"
+					onblur="onBlur(event)">
+				<label onclick="onLabelClick(event)">Гос. номер</label>
+			</div>
+		</div>
+
+		<div class="formAuto">
+			<div class="formAutoUnit formWidth100">
+				<input tabindex="35" type="text" name="PTSGiven" oninput="onChange(event)" onfocus="onFocus(event)"
+					onblur="onBlur(event)">
+				<label onclick="onLabelClick(event)">Кем выдан</label>
+			</div>
+		</div>
+
+		<h4>Свидетельство о регистрации</h4>
+		<div class="formAuto">
+			<div class="formAutoUnit formWidth31">
+				<input tabindex="36" type="text" name="STSSerial" oninput="onChange(event)" onfocus="onFocus(event)"
+					onblur="onBlur(event)">
+				<label onclick="onLabelClick(event)">Свидетельство регистрации ТС, серия</label>
+			</div>
+			<div class="formAutoUnit formWidth31">
+				<input tabindex="37" type="text" name="STSNumber" oninput="onChange(event)" onfocus="onFocus(event)"
+					onblur="onBlur(event)">
+				<label onclick="onLabelClick(event)">Номер</label>
+			</div>
+			<div class="formAutoUnit formWidth31">
+				<input tabindex="38" type="text" name="STSDate" oninput="onChange(event)" onfocus="onFocus(event)"
+					onblur="onBlur(event)">
+				<label onclick="onLabelClick(event)">Дата выдачи</label>
+			</div>
+		</div>
+
+		<div class="formAuto">
+			<div class="formAutoUnit formWidth100">
+				<input tabindex="39" type="text" name="STSGiven" oninput="onChange(event)" onfocus="onFocus(event)"
+					onblur="onBlur(event)">
+				<label onclick="onLabelClick(event)">Кем выдан</label>
+			</div>
+		</div>
+
+		<h4>Стоимость</h4>
+		<div class="formAuto">
+			<div class="formAutoUnit formWidth20">
+				<input tabindex="40" type="text" name="price" oninput="onChange(event)" onfocus="onFocus(event)"
+					onblur="onBlur(event)">
+				<label onclick="onLabelClick(event)">Стоимость ТС</label>
+			</div>
+			<div class="formAutoUnit formWidth80">
+				<input tabindex="41" type="text" name="priceWords" oninput="onChange(event)" onfocus="onFocus(event)"
+					onblur="onBlur(event)">
+				<label onclick="onLabelClick(event)">Стоимость прописью</label>
+			</div>
+		</div>
+
+		<div class="formPrint">
+			<p onclick="window.print();">Печать</p>
+			<p onclick="downloadPDF()">Скачать PDF</p>
+			<a href="zapolnit-online.html" target="_blank">
+				<p>Другой бланк</p>
+			</a>
+		</div>
+	</div>
+
+
+
+
+
+
+	<div class="noPrint adse">
+		<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+		<!-- online-zapolnenie -->
+		<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-9331853767385636" data-ad-slot="4146658561"
+			data-ad-format="auto" data-full-width-responsive="true"></ins>
+		<script>
+			(adsbygoogle = window.adsbygoogle || []).push({});
+		</script>
+	</div>
+
+	<section id="pdf">
+		<div class="formModul" style="justify-content: space-between;">
+			<div class="logo">
+				<!-- <img src="./images/favicon.png"> -->
+			</div>
+			<div class="formModul" style="justify-content: flex-end;">
+				<div class="formUnit" onclick="onClick(event)" style="width: 250px;" title="Редактировать..">
+					<p id="place"></p>
+					<span>место составления договора</span>
+				</div>
+				<div class="formUnit" onclick="onClick(event)" style="width: 200px;">
+					<p id="date"></p>
+					<span>Дата составления</span>
+				</div>
+			</div>
+		</div>
+		<h1>Договор купли продажи транспортного средства</h1>
+		<div class="formModul">
+			<div class="formUnit" onclick="onClick(event)" style="width: 66%;">
+				<p id="buyer"></p>
+				<span>Ф. И. О.</span>
+			</div>
+			<div class="formUnit" onclick="onClick(event)" style="width: 15%;">
+				<p id="buyerDate"></p>
+				<span>дата рождения</span>
+			</div>
+			<div class="formUnit" onclick="onClick(event)" style="width: 17%;">
+				<p id="buyerFrom"></p>
+				<span>место рождения</span>
+			</div>
+		</div>
+		<div class="formModul">
+			<div class="formUnit" onclick="onClick(event)" style="width: 70%;">
+				<p id="buyerRegistration"></p>
+				<span>адрес регистрации</span>
+			</div>
+			<div class="formUnit" onclick="onClick(event)" style="width: 9%;">
+				<p id="buyerSerial"></p>
+				<span>паспорт серия</span>
+			</div>
+			<div class="formUnit" onclick="onClick(event)" style="width: 9%;">
+				<p id="buyerNumber"></p>
+				<span>номер</span>
+			</div>
+			<div class="formUnit" onclick="onClick(event)" style="width: 12%;">
+				<p id="buyerPasportDate"></p>
+				<span>дата выдачи</span>
+			</div>
+		</div>
+		<div class="formModul">
+			<div class="formUnit" onclick="onClick(event)" style="width: 100%;">
+				<p id="buyerPasportGiven"></p>
+				<span>кем выдан</span>
+			</div>
+		</div>
+		<p>именуемый(ая) в дальнейшем «Покупатель» с одной стороны, и</p>
+		<div class="formModul">
+			<div class="formUnit" onclick="onClick(event)" style="width: 66%;">
+				<p id="seller"></p>
+				<span>Ф. И. О.</span>
+			</div>
+			<div class="formUnit" onclick="onClick(event)" style="width: 15%;">
+				<p id="sellerDate"></p>
+				<span>дата рождения</span>
+			</div>
+			<div class="formUnit" onclick="onClick(event)" style="width: 17%;">
+				<p id="sellerFrom"></p>
+				<span>место рождения</span>
+			</div>
+		</div>
+		<div class="formModul">
+			<div class="formUnit" onclick="onClick(event)" style="width: 70%;">
+				<p id="sellerRegistration"></p>
+				<span>адрес регистрации</span>
+			</div>
+			<div class="formUnit" onclick="onClick(event)" style="width: 9%;">
+				<p id="sellerSerial"></p>
+				<span>паспорт серия</span>
+			</div>
+			<div class="formUnit" onclick="onClick(event)" style="width: 9%;">
+				<p id="sellerNumber"></p>
+				<span>номер</span>
+			</div>
+			<div class="formUnit" onclick="onClick(event)" style="width: 12%;">
+				<p id="sellerPasportDate"></p>
+				<span>дата выдачи</span>
+			</div>
+		</div>
+		<div class="formModul">
+			<div class="formUnit" onclick="onClick(event)" style="width: 100%;">
+				<p id="sellerPasportGiven"></p>
+				<span>кем выдан</span>
+			</div>
+		</div>
+
+		<p>именуемый(ая) в дальнейшем «Продавец», с другой стороны, именуемые далее при совместном упоминании «Стороны», а
+			по отдельности «Сторона», заключили настоящий договор (далее – «Договор») о нижеследующем:</p>
+		<h2>1. Предмет договора</h2>
+		<p>1.1 Продавец обязуется передать в собственность Покупателя, а Покупатель – принять и оплатить транспортное
+			средство (далее – ТС).</p>
+		<div class="formModul">
+			<div class="formUnit" onclick="onClick(event)" style="width: 100%;">
+				<p id="mark"></p>
+				<span>Марка и модель транспортного средства</span>
+			</div>
+		</div>
+		<div class="formModul">
+			<div class="formUnit" onclick="onClick(event)" style="width: 25%;">
+				<p id="VIN"></p>
+				<span>Идентификационный номер (VIN)</span>
+			</div>
+			<div class="formUnit" onclick="onClick(event)" style="width: 25%;">
+				<p id="type"></p>
+				<span>Тип (легковой, грузовой и т.д.)</span>
+			</div>
+			<div class="formUnit" onclick="onClick(event)" style="width: 25%;">
+				<p id="category"></p>
+				<span>Категория ТС (A B C D прицеп)</span>
+			</div>
+			<div class="formUnit" onclick="onClick(event)" style="width: 25%;">
+				<p id="year"></p>
+				<span>Год изготовления</span>
+			</div>
+		</div>
+		<div class="formModul">
+			<div class="formUnit" onclick="onClick(event)" style="width: 25%;">
+				<p id="odometr"></p>
+				<span>Пробег, км</span>
+			</div>
+			<div class="formUnit" onclick="onClick(event)" style="width: 25%;">
+				<p id="power"></p>
+				<span>Мощность двигателя, л. с</span>
+			</div>
+			<div class="formUnit" onclick="onClick(event)" style="width: 25%;">
+				<p id="volume"></p>
+				<span>Рабочий объем, куб. см.</span>
+			</div>
+			<div class="formUnit" onclick="onClick(event)" style="width: 25%;">
+				<p id="color"></p>
+				<span>Цвет кузова</span>
+			</div>
+		</div>
+		<div class="formModul">
+			<div class="formUnit" onclick="onClick(event)" style="width: 25%;">
+				<p id="engineModel"></p>
+				<span>Модель двигателя</span>
+			</div>
+			<div class="formUnit" onclick="onClick(event)" style="width: 25%;">
+				<p id="enginenumber"></p>
+				<span>Номер двигателя</span>
+			</div>
+			<div class="formUnit" onclick="onClick(event)" style="width: 25%;">
+				<p id="chassis"></p>
+				<span>Номер шасси, рамы</span>
+			</div>
+			<div class="formUnit" onclick="onClick(event)" style="width: 25%;">
+				<p id="body"></p>
+				<span>Номер кузова</span>
+			</div>
+		</div>
+		<div class="formModul">
+			<div class="formUnit" onclick="onClick(event)" style="width: 10%;">
+				<p id="PTSSerial"></p>
+				<span>Паспорт ТС, серия</span>
+			</div>
+			<div class="formUnit" onclick="onClick(event)" style="width: 10%;">
+				<p id="PTSNumber"></p>
+				<span>номер</span>
+			</div>
+			<div class="formUnit" onclick="onClick(event)" style="width: 48%;">
+				<p id="PTSGiven"></p>
+				<span>Кем выдан</span>
+			</div>
+			<div class="formUnit" onclick="onClick(event)" style="width: 10%;">
+				<p id="PTSDate"></p>
+				<span>Дата выдачи</span>
+			</div>
+			<div class="formUnit" onclick="onClick(event)" style="width: 10%;">
+				<p id="number"></p>
+				<span>Гос. номер</span>
+			</div>
+		</div>
+		<p>1.2. Собственником ТС до его передачи Покупателю является Продавец, свидетельство о регистрации транспортного
+			средства:</p>
+		<div class="formModul">
+			<div class="formUnit" onclick="onClick(event)" style="width: 10%;">
+				<p id="STSSerial"></p>
+				<span>серия</span>
+			</div>
+			<div class="formUnit" onclick="onClick(event)" style="width: 10%;">
+				<p id="STSNumber"></p>
+				<span>номер</span>
+			</div>
+			<div class="formUnit" onclick="onClick(event)" style="width: 60%;">
+				<p id="STSGiven"></p>
+				<span>Кем выдан</span>
+			</div>
+			<div class="formUnit" onclick="onClick(event)" style="width: 10%;">
+				<p id="STSDate"></p>
+				<span>Дата выдачи</span>
+			</div>
+		</div>
+		<p>Право собственности на ТС переходит к Покупателю с момента подписания настоящего Договора.</p>
+		<p>1.3. Передача ТС осуществляется Продавцом в момент передачи Покупателем Продавцу денежных средств в счет оплаты
+			стоимости ТС согласно п. 2. Договора.</p>
+
+		<h2>2. Стоимость ТС и порядок расчетов</h2>
+		<p>Стоимость ТС составляет <span class="inlineUnit" id="price"></span> ( <span class="inlineUnit"
+				id="priceWords"></span> ) руб. (НДС не облагается). Оплата стоимости ТС производится путем 100% предоплаты
+			(наличным или безналичным расчетом).</p>
+		<h2>3. Гарантии и ответственность</h2>
+		<p>Продавец гарантирует Покупателю что:</p>
+		<p>3.1. Продавец является собственником ТС.</p>
+		<p>3.2. ТС не является предметом обязательств Продавца перед третьими лицами, в том числе не является предметом
+			залога, в отношении ТС не наложен запрет на совершение регистрационных действий, ТС не находится под арестом, не
+			числится в базах данных МВД России как угнанное или похищенное транспортное средство и не имеет иных обременений.
+		</p>
+		<p>3.3. В случае нарушения гарантий, указанных в п. 3.1 – 3.2 настоящего договора, Продавец обязуется
+			незамедлительно возвратить Покупателю стоимость ТС в полном объеме со дня обнаружения соответствующего нарушения.
+		</p>
+		<h2>4. Заключительные положения</h2>
+		<p>Настоящий Договор вступает в силу после его подписания Сторонами и действует до момента полного исполнения
+			Сторонами своих обязательств по Договору. Договор составлен в трех экземплярах, имеющих равную юридическую силу.
+		</p>
+		<h2>5. Подписи сторон</h2>
+
+		<div class="formModul" style="justify-content: space-between;">
+			<div style="display: flex; width: 45%;">
+				<p>Денежные средства в сумме <span class="inlineUnit" id="price1"></span> руб. получил.</p>
+			</div>
+			<div style="display: flex; width: 45%;">
+				<p>ТС получил</p>
+			</div>
+		</div>
+
+		<div class="formModul" style="justify-content: space-between;">
+			<div style="display: flex; width: 45%;">
+				<div class="formUnit" style="width: 50%;">
+					<p></p>
+					<span>Продавец, подпись</span>
+				</div>
+				<div class="formUnit" style="width: 50%;">
+					<p></p>
+					<span>расшифровка</span>
+				</div>
+			</div>
+			<div style="display: flex; width: 45%;">
+				<div class="formUnit" style="width: 50%;">
+					<p></p>
+					<span>Покупатель, подпись</span>
+				</div>
+				<div class="formUnit" style="width: 50%;">
+					<p></p>
+					<span>расшифровка</span>
+				</div>
+			</div>
+		</div>
+	</section>
+	<main class="noPrint"></main>
+
+	<script type="text/javascript" src="js/linksBar.js"></script>
+</body>
+
+</html>
