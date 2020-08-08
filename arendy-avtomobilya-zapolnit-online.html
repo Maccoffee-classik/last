@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta http-equiv="Content-language" content="ru" />
+	<meta http-equiv="Content-Style-Type" content="text/css" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- favicon -->
+	<link href="images/favicon.png" rel="shortcut icon" type="image/png" />
+	<link href="images/favicon.png" rel="icon" type="image/png" />
+	<!-- /favicon -->
+	<meta name="robots" content="all" />
+	<meta name="author" lang="ru" content="Договор купли-продажи" />
+	<meta name="copyright" lang="ru" content="Бланк договор купли-продажи" />
+	<!-- verification -->
+
+	<meta content="договор аренды автомобиля, заполнить бланк онлайн" name="keywords">
+	</meta>
+	<meta content="Форма договора аренды транспортного средства 2020 для онлайн заполнения." name="description">
+	</meta>
+	<!-- Yandex.Metrika counter -->
+	<script type="text/javascript">
+		(function (d, w, c) {
+			(w[c] = w[c] || []).push(function () {
+				try {
+					w.yaCounter33710244 = new Ya.Metrika({
+						id: 33710244,
+						clickmap: true,
+						trackLinks: true,
+						accurateTrackBounce: true,
+						webvisor: true
+					});
+				} catch (e) {}
+			});
+			var n = d.getElementsByTagName("script")[0],
+				s = d.createElement("script"),
+				f = function () {
+					n.parentNode.insertBefore(s, n);
+				};
+			s.type = "text/javascript";
+			s.async = true;
+			s.src = "https://mc.yandex.ru/metrika/watch.js";
+			if (w.opera == "[object Opera]") {
+				d.addEventListener("DOMContentLoaded", f, false);
+			} else {
+				f();
+			}
+		})(document, window, "yandex_metrika_callbacks");
+	</script><noscript>
+		<div><img src="https://mc.yandex.ru/watch/33710244" style="position:absolute; left:-9999px;" alt="" /></div>
+	</noscript>
+	<!-- /Yandex.Metrika counter -->
+	<!-- google anal-->
+	<script>
+		(function (i, s, o, g, r, a, m) {
+			i['GoogleAnalyticsObject'] = r;
+			i[r] = i[r] || function () {
+				(i[r].q = i[r].q || []).push(arguments)
+			}, i[r].l = 1 * new Date();
+			a = s.createElement(o),
+				m = s.getElementsByTagName(o)[0];
+			a.async = 1;
+			a.src = g;
+			m.parentNode.insertBefore(a, m)
+		})(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+		ga('create', 'UA-70922540-1', 'auto');
+		ga('send', 'pageview');
+	</script>
+	<script type="text/javascript">
+		function clearPlaceholders() {
+			const inputs = document.getElementsByTagName("input");
+			Array.from(inputs).map(function (elem) {
+				elem.setAttribute('placeholder', '');
+			});
+		}
+	</script>
+	<script type="text/javascript">
+		window.onload = function () {
+			const inputs = document.getElementsByTagName("input");
+			Array.from(inputs).map(function (inpt) {
+				if (window.localStorage[inpt.name]) {
+					inpt.value = window.localStorage[inpt.name]
+				}
+				inpt.onblur = function () {
+					window.localStorage.setItem(inpt.name, inpt.value);
+				};
+			});
+		};
+	</script>
+	<!-- /google anal-->
+	<!-- Open Graph -->
+	<meta property="og:title" content="Заполнить онлайн бланк договора аренды транспортного средства" />
+	<meta property="og:description"
+		content="Заполнить онлайн и распечатать бланк договора аренды транспортного средства." />
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="https://blank-dogovor-kupli-prodazhi.ru" />
+	<meta property="og:site_name" content="Бланк договор аренды" />
+	<meta property="og:locale" content="ru_RU" />
+	<meta property="og:image" content="https://blank-dogovor-kupli-prodazhi.ru/images/favicon.png" />
+	<meta property="og:image:type" content="image/png" />
+	<meta property="og:image:width" content="150" />
+	<meta property="og:image:height" content="110" />
+	<!-- Open Graph END-->
+	<title>Заполнить договор аренды автомобиля 2020</title>
+	<!-- CSS -->
+	<link rel="stylesheet" type="text/css" href="css/print.css">
+	<!-- js  -->
+	<script src="https://unpkg.com/jspdf@latest/dist/jspdf.min.js"></script>
+	<script type="text/javascript" src="js/html2canvas.min.js"></script>
+	<script type="text/javascript" src="js/zapolnit-online.js"></script>
+</head>
+
+<body>
+	<div id="pdf" class="printConteiner">
+		<h1>Договор аренды<select class="selectType">
+				<option>автомобиля</option>
+				<option>мотоцикла</option>
+				<option>прицепа</option>
+				<option>агрегата</option>
+			</select>
+		</h1>
+		<!-- <img src="images/favicon.png" class="bgimage"> -->
+		<p>Город _<input name="place" type="text" style="width: 300px;"
+				placeholder="Екатеринбург" />_____________________________</p>
+		<p class="right">«_<input name="date1" type="text" style="width: 20px; height: 11px;" />____» _<input name="date2"
+				type="text" style="width: 85px; height: 11px;" />________________ <select
+				style="font-weight: 500; font-size: 12px;" class="selectType">
+				<option>2020</option>
+				<option>2019</option>
+				<option>2018</option>
+				<option>2017</option>
+			</select>г.</p></br>
+		<div class="clear"></div>
+		<p style="white-space: nowrap;">Мы, <b>Арендодатель </b> _<input name="buyer" type="text" style="width: 560px;"
+				placeholder="Сидоров Михаил Иванович" />___________________________________________________________________________________________,
+		</p></br>
+		<p style="white-space: nowrap;">Дата рождения _<input name="buyerDate" type="text" style="width: 90px;"
+				placeholder="02.05.1964" />_______________, зарегистрированный по адресу _<input type="text"
+				style="width: 304px;"
+				placeholder="г. Екатеринбург, проспект Ленина, дом 1, квартира 1" />___________________________________________________,
+		</p></br>
+		<p>паспорт серии _<input name="buyerSerial" type="text" style="width: 35px;" placeholder="6505" />______ №_<input
+				name="buyerNumber" type="text" style="width: 55px;" placeholder="123456" />__________ выдан <input
+				name="buyerPasportDate" type="text" style="width: 70px;" placeholder="23.01.2004г" />____________ _<input
+				name="buyerPasportGiven1" type="text" style="width: 340px;"
+				placeholder="отделом УФМС России г. Екатеринбурга" />________________________________________________________
+		</p></br>
+		<p>и <b>Арендатор </b> _<input name="seller" type="text" style="width: 560px;"
+				placeholder="Иванова Марья Сергеевна" />________________________________________________________________________________________________,
+		</p></br>
+		<p>Дата рождения _<input name="sellerDate" type="text" style="width: 90px;"
+				placeholder="02.05.1985" />_______________, зарегистрированный по адресу _<input name="sellerRegistration1"
+				type="text" style="width: 304px;"
+				placeholder="г. Екатеринбург, улица Гагарина, дом 14, квартира 4" />___________________________________________________
+		</p></br>
+		<p>паспорт серии _<input name="sellerSerial" type="text" style="width: 35px;" placeholder="6505" />______ №_<input
+				name="sellerNumber" type="text" style="width: 55px;" placeholder="987654" />__________ выдан <input
+				name="sellerPasportDate" type="text" style="width: 70px;" placeholder="21.05.2005г" />____________ _<input
+				name="sellerPasportGiven1" type="text" style="width: 340px;"
+				placeholder="отделом УФМС России г. Екатеринбурга" />________________________________________________________
+		</p></br>
+		<p><b>заключили настоящий <strong>договор</strong> о нижеследующем. </b></p></br>
+		<p>1.1. Предметом настоящего договора является автомобиль:</p></br>
+		<p>Марка, модель _<input name="mark" type="text" style="width: 270px;"
+				placeholder="Toyota Chaser" />_______________________________________________ Категория ТС_<input
+				name="category" type="text" style="width: 197px;" placeholder="   B" />__________________________________</p>
+		</br>
+		<p>Тип транспортного средства по ПТС _<input name="type" type="text" style="width: 160px;"
+				placeholder="легк. авто. седан" />____________________________ Регистрационный знак _<input name="number"
+				type="text" style="width: 153px;" placeholder="А 123 АА 196" />___________________________</p></br>
+		<p>Идентификационный номер (VIN) _<input name="VIN" type="text" style="width: 225px;"
+				placeholder="JZX90-1234567" />_______________________________________ Год выпуска _<input name="year"
+				type="text" style="width: 153px;" placeholder="1995" />___________________________</p></br>
+		<p>Модель двигателя _<input name="engineModel" type="text" style="width: 95px;"
+				placeholder="jz123456" />_________________№_<input name="enginenumber" type="text"
+				style="width: 90px;" />________________ Шасси _<input name="chassis" type="text" style="width: 285px;"
+				placeholder="отсутствует" />_________________________________________________ </p></br>
+		<p>Кузов _<input name="body" type="text" style="width: 260px;"
+				placeholder="JZX90-1234567" />_____________________________________________ Цвет _<input name="color"
+				type="text" style="width: 295px;" placeholder="белый" />___________________________________________________</p>
+		</br>
+		<p>1.2. Указанный автомобиль принадлежит <b>Арендодателю</b> на основании паспорта транспортного средства: </p></br>
+		<p>серии _<input name="PTSSerial" type="text" style="width: 50px;" placeholder="66 ХЕ" />__________ № _<input
+				name="PTSNumber" type="text" style="width: 60px;" placeholder="123456" />___________ выданного <input
+				name="PTSDate" type="text" style="width: 77px;" placeholder="12.07.2013" />_____________ _<input
+				name="PTSGiven1" type="text" style="width: 315px;"
+				placeholder="МРЭО ГИБДД ГУ МВД по Свердловской обл" />_____________________________________________________</p>
+		</br>
+		<p>2.1. Арендодатель обязуется: </p></br>
+		<p>2.1.1. передать автомобиль Арендатору не позднее дня, следующего за днём подписания настоящего договора;</p></br>
+		<p>2.1.2. предоставить Арендатору автомобиль, находящийся в исправном техническом состоянии, без косметических
+			дефектов;</p></br>
+		<p>2.1.3. передать Арендатору технический паспорт транспортного средства и ключи от данного транспортного средства;
+		</p></br>
+		<p>2.1.4. производить страхование транспортного средства за свой счёт.</p></br>
+		<p>2.2. Арендодатель вправе требовать от Арендатора своевременного внесения арендной платы, а также возврат
+			арендованного автомобиля в срок, установленный настоящим договором.</p></br>
+		<p>3.1. Арендатор обязуется:</p></br>
+		<p>3.1.1. использовать автомобиль по назначению и своевременно вносить арендную плату;</p></br>
+		<p>3.1.2. поддерживать автомобиль в надлежащем состоянии в течении всего срока аренды;</p></br>
+		<p>3.1.3. осуществлять за свой счёт капитальный и текущий ремонт переданного в аренду автомобиля;</p></br>
+		<p>3.1.4. осуществлять управление транспортным средством, его техническую и коммерческую эксплуатацию своими силами;
+		</p></br>
+		<p>3.1.5. нести расходы на содержание автомобиля, а также расходы, связанные с его эксплуатацией;</p></br>
+		<p>3.1.6. в течение _<input type="text" style="width: 40px;" placeholder="2" />__ дней по истечении срока договора
+			возвратить автомобиль Арендодателю в исправном техническом состоянии с учетом нормального износа и без
+			косметических дефектов.</p></br>
+		<p>3.2. Арендатор вправе заключать от своего имени с третьими лицами договоры перевозки и иные договоры, не
+			противоречащие назначению транспортного средства.</p></br>
+		<p>4.1. Настоящий договор действует в течение _<input type="text" style="width: 25px;" placeholder="12" />_____
+			месяцев со дня его подписания.</p></br>
+		<p>5.1. Арендная плата составляет _<input type="text" style="width: 80px;" placeholder="20000" />______________
+			рублей в <input type="text" style="width: 85px;" placeholder="месяц" />_______________ и вносится не позднее
+			последнего числа месяца, в котором осуществлялось использование автомобиля.</p></br>
+		<p>6.1. Арендодатель несёт ответственность за недостатки автомобиля, переданного в аренду по настоящему договору,
+			полностью или частично препятствующие его использованию.</p></br>
+		<p>6.2. В случае просрочки внесения арендной платы Арендатор выплачивает Арендодателю неустойку в размере _<input
+				type="text" style="width: 15px;" placeholder="20" />____% от суммы долга за каждый день просрочки.</p></br>
+		<p class="just">6.3. В случае просрочки возврата автомобиля Арендатор выплачивает Арендодателю неустойку в размере
+			_<input type="text" style="width: 15px;" placeholder="5" />____ % от суммы ежемесячного арендного платежа за
+			каждый день просрочки.</p></br>
+
+		<div class="clear"></div>
+		<p class="half-l">Арендодатель</p>
+		<p class="half-r">Арендатор</p></br>
+		<div class="clear"></div>
+		<p>__________________________________________</p>
+		<p class="right">__________________________________________</p></br>
+		<div class="clear"></div>
+		<p class="half-l">(подпись и ФИО)</p>
+		<p class="half-r">(подпись и ФИО)</p></br>
+		<div class="clear"></div>
+		<p>Тел._______________________________________</p>
+		<p class="right">Тел._______________________________________</p></br>
+		<p></p></br>
+		<p></p></br>
+		<p></p></br>
+		<div class="buttons">
+			<div style="display: flex; flex-direction: column;">
+				<span title="Очистить все заполненные поля" class="hidePlaceholders" onclick="clearForm()">Очистить поля</span>
+				<span title="Скрывает все подсказки, при печати скрываются автоматически" class="hidePlaceholders"
+					onclick="clearPlaceholders()">Убрать подсказки*</span>
+			</div>
+			<div>
+				<button
+					onclick="clearPlaceholders(); window.print(); yaCounter33710244.reachGoal('print-online');">Печать</button>
+				<button onclick="downloadPDF()">Скачать PDF</button>
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>
